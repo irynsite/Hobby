@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>After Effects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
+<link href="style.css/page2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="style.css/style.css">
+	<!-- ✅ Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+      <img src="img/logoir itam.png" alt="logo"> <!-- Replace with your logo path -->
+      <span>Iryn's&nbsp; Website&nbsp;</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+		<li><a class="btn" href="#hobby">Hobby</a></li>
+        <li><a href="#contact me">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+ <section class="gallery">
+    <h2>My Work&nbsp;</h2>
+    <p class="gallery-subtext">
+      Motion graphics? Transitions? Animations that pop? AE is where I make all the ✨ visual magic ✨ happen.
+    </p>
+
+    <div class="gallery-grid">
+      <!-- Image Card 1 -->
+      <div class="gallery-item">
+        <div class="buttons">
+<video width="640" height="360" controls class="zoom-img" id="img1">
+  <source src="img/ae1.mp4" type="video/mp4">
+</video>
+           <a href="img/ae1.mp4" download> <button> Full screen </button> </a>
+           
+        </div>
+      </div>
+
+      <!-- Image Card 2 -->
+      <div class="gallery-item">
+        <div class="buttons">
+<video width="640" height="360" controls class="zoom-img" id="img2">
+  <source src="img/ae2.mp4" type="video/mp4">
+</video>
+		<a href="img/ae2.mp4" download>
+  <button style="padding: 10px 20px; background: #ff007f; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    Full Screen </button>
+         </a>
+        </div>
+      </div>
+
+      <!-- Image Card 3 -->
+      <div class="gallery-item">
+        <div class="buttons">
+<video width="640" height="360" controls class="zoom-img" id="img3">
+  <source src="img/ae3.mp4" type="video/mp4">
+</video>
+          <a href="img/ae3.mp4" download>
+            <button onclick="openFullscreen('img3')">Full Screen</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Image Card 4 -->
+      <div class="gallery-item">
+        <div class="buttons">
+			<video width="640" height="360" controls class="zoom-img" id="img4">
+  <source src="img/ae4.mp4" type="video/mp4">
+</video>
+			<a href="img/ae4.mp4" download> 
+            <button onclick="openFullscreen('img3')">Full Screen</button> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+	<footer class="footer">
+  <div class="footer-left" id="contact me">
+    <img src="img/logoir.png" alt="Logo" class="footer-logo">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:hairinaaahue@gmail.com"><i class="fas fa-envelope"></i> hairinaaahue@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <label for="subscribe">Subscribe</label>
+    <form class="subscribe-form" onsubmit="submitEmail(event)">
+      <input type="email" id="subscribe" placeholder="Email address" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</footer>
+	
+<script>
+  function submitEmail(event) {
+    event.preventDefault();
+    const email = document.getElementById("subscribe").value;
+    alert("Thank you for subscribing: " + email);
+    document.getElementById("subscribe").value = ""; // Clear input
+  }
+</script>
+</body>
+</html>
