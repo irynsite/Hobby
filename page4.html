@@ -2,11 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Canva</title>
+<title>CapCut</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
 <link href="css/page2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
-		<!-- ✅ Font Awesome CDN -->
+	<!-- ✅ Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 <header class="navbar">
@@ -16,7 +19,7 @@
     </div>
     <nav>
       <ul>
-        <li><a  href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 		<li><a class="btn" href="#hobby">Hobby</a></li>
         <li><a href="#contact me">Contact me</a></li>
       </ul>
@@ -26,48 +29,59 @@
  <section class="gallery">
     <h2>My Work&nbsp;</h2>
     <p class="gallery-subtext">
-      Clean visuals, snappy reels, aesthetic layouts. Canva’s the secret sauce when I want simple + stylish at speed 🖌️⚡
+      Quick, trendy, and mobile-friendly. When I need to hit that social media sweet spot fast — CapCut’s my go-to! 📱💥
     </p>
 
     <div class="gallery-grid">
       <!-- Image Card 1 -->
       <div class="gallery-item">
         <div class="buttons">
-			<img src="img/cv1.jpg" alt="muharram" weight="400px" height="400px" controls class="zoom-img" >
-			<a href="img/cv1.jpg" download> 
-				<button onclick="openFullscreen('img1')"> Full Screen</button> </a>
+<video width="640" height="360" controls class="zoom-img" id="img1">
+  <source src="img/cc1.MOV" type="video/mp4">
+</video>
+			<a href="img/cc1.MOV" download> <button> Download </button> </a>
         </div>
       </div>
 
       <!-- Image Card 2 -->
       <div class="gallery-item">
         <div class="buttons">
-			<img src="img/cv2.png" alt="hny" weight="400px" height="400px" controls class="zoom-img" >
-            <a href="img/cv2.png" download> <button onclick="openFullscreen('img2')">Full Screen</button> </a>
+<video width="640" height="360" controls class="zoom-img" id="img2">
+  <source src="img/cc2.MOV" type="video/mp4">
+</video>
+		<a href="img/cc2.MOV" download>
+  <button style="padding: 10px 20px; background: #ff007f; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    Download </button>
+         </a>
         </div>
       </div>
 
       <!-- Image Card 3 -->
       <div class="gallery-item">
         <div class="buttons">
-			<img src="img/TAGCARD.png" alt="tag" weight="400px" height="400px" controls class="zoom-img">
-            <a href="img/TAGCARD.png" download> 
-				<button onclick="openFullscreen('img3')">Full Screen</button> </a>
+<video width="640" height="360" controls class="zoom-img" id="img3">
+  <source src="img/cc3.MOV" type="video/mp4">
+</video>
+          <a href="img/cc3.MOV" download>
+            <button onclick="openFullscreen('img3')">Download</button>
+          </a>
         </div>
       </div>
 
       <!-- Image Card 4 -->
       <div class="gallery-item">
         <div class="buttons">
-			<img src="img/cv3.png" alt="sbb" weight="400px" height="400px" controls class="zoom-img">
-			<a href="img/cv3.png" download>
-				<button onclick="openFullscreen('img4')"> Full screen </button> </a>
+			<video width="640" height="360" controls class="zoom-img" id="img4">
+  <source src="img/cc4.MOV" type="video/mp4">
+</video>
+			<a href="img/cc4.MOV" download> 
+            <button onclick="openFullscreen('img3')">Download</button> </a>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="../../Desktop/NMC302/script.js"></script>
+  <script src="script.js"></script>
 
 	<footer class="footer">
   <div class="footer-left" id="contact me">
